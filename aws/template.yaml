@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Sample Serverless Backend App
+
+
+Resources:
+  # ========== Lambda Declaration ==========  
+
+    NodeJSHandler:
+      Type: AWS::Serverless::Function
+      Properties:
+        CodeUri: ../handlers/
+        Handler: app.mainHandler
+        Runtime: nodejs16.x
+        Architectures:
+          - x86_64
+        Events:
+          testGet:
+            Type: Api
+            Properties:
+              Path: /
+              Method: GET
+
+          testPost:
+            Type: Api
+            Properties:
+              Path: /
+              Method: POST
