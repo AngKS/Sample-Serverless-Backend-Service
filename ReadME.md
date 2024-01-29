@@ -42,6 +42,13 @@ cd project
 chmod +x deployBackend.sh
 ```
 
+## Guide
+The following sections provide a brief guide on how the sample project is structured and how to deploy the sample project to AWS.
+
+### Project Structure
+The sample project is structured as follows:
+
+
 ## Testing
 To test the deployed serverless function via the AWS Management Console, you can follow these steps:
 
@@ -63,4 +70,19 @@ To cleanup the deployed serverless function via the AWS Management Console, you 
 - Click on the "Delete" button in the top-right corner.
 - Confirm the deletion of the stack.
 - Please note that the specific steps may vary slightly depending on the AWS Management Console version and layout.
+
+
+## Glossary
+- **AWS CLI** - AWS Command Line Interface
+- **AWS IAM** - AWS Identity and Access Management
+- **AWS Lambda** - AWS Serverless Function
+- **AWS SAM** - AWS Serverless Application Model
+- **AWS Serverless Function** - AWS Lambda
+- **AWS CloudFormation** - AWS Infrastructure as Code service
+- **AWS CloudFormation Stack** - Application stack deployed to AWS CloudFormation
+- **Artifact Store** - AWS S3 Bucket that stores the deployment artifacts
+- **Artifact Path** - Path to the deployment artifacts in the Artifact Store (subdirectories in the S3 bucket)
+
+
+
 

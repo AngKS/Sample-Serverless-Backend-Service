@@ -51,6 +51,7 @@ if [ "$input" = "Y" ] || [ "$input" = "y" ]; then
         --s3-prefix "$ARTIFACT_PATH" \
         --stack-name $BACKEND_STACK_NAME \
         --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM \
+        --parameter-overrides ParameterKey=Region,ParameterValue=$AWS_REGION
         --region "$AWS_REGION" \
         --profile "$AWS_PROFILE"
 

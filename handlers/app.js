@@ -1,3 +1,6 @@
+
+const {REGION} = process.env
+
 module.exports.mainHandler = (event, context) => {
     
     // get the event method
